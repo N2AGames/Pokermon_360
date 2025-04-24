@@ -77,6 +77,7 @@ family = {
     {"snorunt", "glalie", "froslass"},
     {"nosepass", "probopass"},
     {"beldum", "metang", "metagross"},
+    {"rayquaza"},
     {"jirachi", "jirachi_banker", "jirachi_booster", "jirachi_power", "jirachi_copy", "jirachi_fixer"},
     {"sentret", "furret"},
     {"hoothoot", "noctowl"},
