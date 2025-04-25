@@ -588,16 +588,6 @@ jd_def["j_poke_metagross"] = {
 --	Kyogre
 --	Groudon
 --	Rayquaza
-jd_def["j_poke_rayquaza"] = {
-    text = {
-        {ref_table ="card.joker_display_values", ref_value = "status", colour = G.C.GREY}
-    },
-    calc_function = function(card)
-        local status = "Not Active!"
-        if G.GAME.current_round.hands_played == 0 then status = "Active!" end
-        card.joker_display_values.status = status
-    end
-}
 --	Jirachi
 jd_def["j_poke_jirachi_power"] = {
     text = {

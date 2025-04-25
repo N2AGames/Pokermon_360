@@ -219,33 +219,6 @@ local metagross={
 -- Kyogre 382
 -- Groudon 383
 -- Rayquaza 384
-local rayquaza = {
-  name = "rayquaza", 
-  pos = {x = 2, y = 14},
-  soul_pos = {x = 3, y = 14},
-  config = {extra = {Xmult_multi = 1.5,}},
-  loc_vars = function(self, info_queue, center)
-    type_tooltip(self, info_queue, center)
-    return {vars = {center.ability.extra.Xmult_multi, }}
-  end,
-  rarity = 4,
-  cost = 20,
-  stage = "Legendary",
-  ptype = "Dragon",
-  atlas = "Pokedex3",
-  perishable_compat = false,
-  blueprint_compat = false,
-  calculate = function(self, card, context)
-    -- Add seals
-    if context.before and context.cardarea == G.jokers and G.GAME.current_round.hands_played == 0 and context.scoring_name == 'High Card' then
-      local _card = context.scoring_hand[1]
-      local seal_type = pseudorandom(pseudoseed('rayquaza'))
-      if seal_type > 0.50 then _card:set_seal('Red', true)
-      else _card:set_seal('Blue', true)
-      end
-    end
-  end
-}
 -- Jirachi 385
 local jirachi = {
   name = "jirachi", 
@@ -556,5 +529,5 @@ local jirachi_fixer = {
 -- Torterra 389
 -- Chimchar 390
 return {name = "Pokemon Jokers 361-390", 
-        list = {snorunt, glalie, beldum, metang, metagross, rayquaza, jirachi, jirachi_banker, jirachi_booster, jirachi_power, jirachi_copy, jirachi_fixer},
+        list = {snorunt, glalie, beldum, metang, metagross, jirachi, jirachi_banker, jirachi_booster, jirachi_power, jirachi_copy, jirachi_fixer},
 }

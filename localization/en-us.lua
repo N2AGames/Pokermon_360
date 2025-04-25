@@ -2761,15 +2761,6 @@ return {
                     "{C:attention}Booster Packs{} have {C:attention}1{} more card in them",
                 }
             },
-            j_poke_rayquaza = {
-                name = 'Rayquaza',
-                text = {
-                    "Balance {X:blue,C:white}Chips{} and {X:red,C:white}Mult{}",
-                    "when calculating score for played hand",
-                    "If the first played hand is {C:attention}High card{} applies",
-                    "{C:attention}Red{} or {C:attention}Blue{} seal to the leftmost played card"
-                }
-            },
             j_poke_jirachi_power = {
                 name = 'Jirachi',
                 text = {
